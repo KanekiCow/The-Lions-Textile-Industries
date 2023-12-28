@@ -19,5 +19,8 @@
   "devDependencies": {
     "svelte-motion": "^0.12.0",
     "tailwindcss": "^3.4.0"
+  },
+  "engine": {
+    "yarn": ">=1.22.19"
   }
 }
