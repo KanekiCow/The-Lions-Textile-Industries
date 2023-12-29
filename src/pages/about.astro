@@ -1,9 +1,65 @@
 ---
+import pic1 from "../img/1.webp"
+import pic2 from "../img/2.webp"
+import pic3 from "../img/3.webp"
 import Layout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
-import header from "../img/header.webp"
+import header from "../img/header.webp";
+
 ---
 
 <Layout title="About | Lions Textile Industries">
-   
+    <div>
+        <div class="flex absolute justify-center h-[300px] w-[100%] z-[1] items-center ">
+            <h1 class="mt-[67px] text-white z-[2] text-[40px] font-bold">More About Us</h1>
+            <h1 class="mt-[67px] z-[2] text-[40px] font-black text-orange-400">.</h1>
+        </div>
+        <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
+            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="header" src={header} />
+        </div>
+    </div>
+    <content class="text-black flex justify-center pb-12">
+        <section class=" min-[100px]:w-[70%] ">
+            <div class="flex pt-12">
+                <h1 class="pr-[5px] text-[30px] font-semibold ">Our</h1>
+                <h1 class="text-[30px] font-semibold text-orange-400">Background </title>
+            </div>
+            <p class="text-[20px]"> At <b class="text-orange-600">Lions Textile Industries</b> you won’t only find what you need; you’ll get <b class="text-orange-600">the best quality at a fair price</b>. With years of experience in the industry, we have the expertise to thoroughly and efficiently serve our customers. We're always working to make our products, service and overall client experience even better. Whether you’re a one-time buyer or a repeat client looking to buy in bulk, you can count on us to provide <b class="text-orange-600">great products and excellent service</b> every step of the way. Browse our inventory and get in touch if you can’t find what you’re looking for. </p>
+        </section>
+    </content>
+    <div class="flex min-[1000px]:flex-row flex-col">
+      <div>
+         <div>
+         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
+            <h1 class=" z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
+         </div>
+         </div>
+         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
+            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic1" src={pic1} />
+         </div>
+    </div>
+        <div>
+         <div>
+         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
+            <h1 class=" z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
+         </div>
+         </div>
+         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
+            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic2" src={pic2} />
+         </div>
+    </div>
+        <div>
+         <div>
+         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
+            <h1 class="z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
+         </div>
+         </div>
+         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
+            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic3" src={header} />
+         </div>
+    </div>
+    </div>
 </Layout>
