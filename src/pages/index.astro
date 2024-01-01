@@ -1,9 +1,77 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import Home from "../img/home.jpg";
+import History from "../img/thing.jpg";
 ---
 
 <Layout title="Home | Lions Textile Industries">
-	
+  <div>
+    <div>
+      <div
+        class="flex absolute justify-center h-[100vh] w-[100%] z-[1] items-center"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="flex min-[550px]:flex-row flex-col items-center justify-center"
+          >
+            <h1
+              class="min-[550px]:mt-[67px] text-white z-[2] text-[40px] font-bold drop-shadow-lg shadow-black"
+            >
+              The
+            </h1>
+            <h1
+              class="ml-[5px] min-[550px]:mt-[67px] z-[2] text-[40px] font-black text-orange-400 drop-shadow-lg shadow-orange-400"
+            >
+              Lions
+            </h1>
+            <h1
+              class="ml-[5px] min-[550px]:mt-[67px] text-white z-[2] text-[40px] font-bold drop-shadow-lg shadow-black"
+            >
+              Textile Industries.
+            </h1>
+          </div>
+          <p class="text-center text-gray-100">Global Solutions</p>
+          <a
+            class="transition-[color, transform] ease-in-out duration-200 hover:z-10 hover:mb-3 hover:bg-[#EE9935] hover:text-white/100 p-[5px] rounded-md px-[7px] backdrop-blur-lg text-center w-[200px] h-[40px] mt-[75px] text-white/50 bg-white/10 leading-[30px]"
+            href="/about"
+            >Learn More About Us_
+            <a></a>
+          </a>
+        </div>
+      </div>
+      <div
+        class="relative text-center overflow-hidden text-white h-[100vhyyy] shadow-inner bg-black"
+      >
+        <Image
+          class="h-[100vh] w-[100%] shadow-inner blur-sm opacity-50"
+          alt="header"
+          src={Home}
+        />
+      </div>
+    </div>
+    <div class="flex flex-col w-full  bg-[#ffb21e] overflow-hidden min-[1100px]:flex-row">
+      <div class="overflow-hidden min-[1100px]:w-[55%] min-[1100px]:h-full min-[1100px]:h-[20vh]">
+        <Image
+          alt="our history"
+          src={History}
+          class="min-[1100px]:rounded-r-[100px] overflow-hidden min-[1100px]:h-[500px] top-[50%] "
+        />
+      </div>
+      <div class="flex flex-col min-[1100px]:w-[45%] p-[50px] justify-center text-[20px]">
+        <div class="flex flex-row space-x-[5px]">
+          <h1 class="font-bold text-[30px]">Our</h1>
+          <h1 class="font-bold text-[30px] text-[#df5252]">Story</h1>
+        </div>
+        <p>
+          We hold ourselves up to the highest of standards, and have been part
+          of this industry since 2000. We have an immense amount of knowledge
+          from years of experience as a Fabric Manufacturer, and continue to
+          expand our practices each and every day. We supply many local and
+          global companies with a variety of innovative products, created with
+          the greatest degree of precision and care.
+        </p>
+      </div>
+    </div>
+  </div>
 </Layout>
-
-

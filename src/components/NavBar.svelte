@@ -53,6 +53,7 @@ const item = {
   <a class="absolute justify-start ml-[10px] " href="/">
     <div class="flex items-center flex-nowrap" >
      <img src="{Logo.src}" alt="logo" class="size-[60px] "/>
+       <img src="{Logo.src}" alt="logo" class="size-[60px] "/>
      <h1 class="font-semibold size-full text-[18px] ml-3 max-[1100px]:hidden">The Lions Textile Industries</h1>
       <h1 class="font-black text-orange-400 size-full text-[20px] max-[1100px]:hidden w-[1px]">.</h1>
     </div>
@@ -65,7 +66,7 @@ const item = {
   <a href="/career  " class=" transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935]/50 p-[5px] rounded-md px-[7px] ">Careers</a>
   </div>
 <div class="flex justify-end">
- <button on:click={togglePanel} class=" transition-[colors, transform] min-[1100px]:hidden fa-solid {showPanel ? 'fa-x' : 'fa-ellipsis-vertical'} p-[10px] rounded-md ml-[10px] float-right m-[15px] focus:outline-none focus-visible:ring-2 duration-300 focus-visible:ring-offset-2  ease-in-out transform active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed disabled:border-gray-400 disabled:text-gray-400 min-[1100px]:justify-end "></button>
+ <button on:click={togglePanel} class=" transition-[colors, transform] min-[1100px]:hidden fa-solid {showPanel ? 'fa-x' : 'fa-ellipsis-vertical'} p-[20px] rounded-md ml-[10px] float-right m-[15px] focus:outline-none focus-visible:ring-2 duration-300 focus-visible:ring-offset-2  ease-in-out transform active:scale-90 disabled:opacity-50 disabled:cursor-not-allowed disabled:border-gray-400 disabled:text-gray-400 min-[1100px]:justify-end "></button>
 </div>
  
 </nav>

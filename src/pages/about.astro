@@ -1,64 +1,202 @@
 ---
-import pic1 from "../img/1.webp"
-import pic2 from "../img/2.webp"
+import pic1 from "../img/1.webp";
+import pic2 from "../img/2.webp";
 import Layout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import header from "../img/header.png";
-
 ---
 
 <Layout title="About | Lions Textile Industries">
+  <div>
+    <div
+      class="flex absolute justify-center h-[300px] w-[100%] z-[1] items-center "
+    >
+      <h1 class="mt-[67px] text-white z-[2] text-[40px] font-bold">
+        More About Us
+      </h1>
+      <h1 class="mt-[67px] z-[2] text-[40px] font-black text-orange-400">.</h1>
+    </div>
+    <div
+      class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black"
+    >
+      <Image
+        class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50"
+        alt="header"
+        src={header}
+      />
+    </div>
+  </div>
+  <content class="text-black flex justify-center pb-20">
+    <section class="min-[100px]:w-[70%]">
+      <div class="flex pt-12">
+        <h1 class="pr-[5px] text-[30px] font-semibold">Our</h1>
+        <h1 class="text-[30px] font-semibold text-orange-400">Background</h1>
+      </div>
+      <p class="text-[20px]">
+        At <b class="text-orange-600">Lions Textile Industries</b> you won’t
+        only find what you need; you’ll get <b class="text-orange-600"
+          >the best quality at a fair price</b
+        >. With years of experience in the industry, we have the expertise to
+        thoroughly and efficiently serve our customers. We're always working to
+        make our products, service and overall client experience even better.
+        Whether you’re a one-time buyer or a repeat client looking to buy in
+        bulk, you can count on us to provide <b class="text-orange-600"
+          >great products and excellent service</b
+        > every step of the way. Browse our inventory and get in touch if you
+        can’t find what you’re looking for.
+      </p>
+    </section>
+  </content>
+  <div class="flex min-[1000px]:flex-row flex-col justify-center">
     <div>
-        <div class="flex absolute justify-center h-[300px] w-[100%] z-[1] items-center ">
-            <h1 class="mt-[67px] text-white z-[2] text-[40px] font-bold">More About Us</h1>
-            <h1 class="mt-[67px] z-[2] text-[40px] font-black text-orange-400">.</h1>
-        </div>
-        <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
-            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="header" src={header} />
-        </div>
-    </div>
-    <content class="text-black flex justify-center pb-12">
-        <section class=" min-[100px]:w-[70%] ">
-            <div class="flex pt-12">
-                <h1 class="pr-[5px] text-[30px] font-semibold ">Our</h1>
-                <h1 class="text-[30px] font-semibold text-orange-400">Background </title>
-            </div>
-            <p class="text-[20px]"> At <b class="text-orange-600">Lions Textile Industries</b> you won’t only find what you need; you’ll get <b class="text-orange-600">the best quality at a fair price</b>. With years of experience in the industry, we have the expertise to thoroughly and efficiently serve our customers. We're always working to make our products, service and overall client experience even better. Whether you’re a one-time buyer or a repeat client looking to buy in bulk, you can count on us to provide <b class="text-orange-600">great products and excellent service</b> every step of the way. Browse our inventory and get in touch if you can’t find what you’re looking for. </p>
-        </section>
-    </content>
-    <div class="flex min-[1000px]:flex-row flex-col">
       <div>
-         <div>
-         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
-            <h1 class=" z-[2] text-[30px] font-bold">Award-Winning Service</h1>
-            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
-         </div>
-         </div>
-         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
-            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic1" src={pic1} />
-         </div>
+        <div
+          class="flex absolute justify-center h-[300px] w-[100%] min-[1100px]:w-[33%] z-[1] items-center flex-col"
+        >
+          <h1 class="z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+          <h1 class="mt-[10px] z-[2] text-[20px] font-medium">
+            How We Operate
+          </h1>
+        </div>
+      </div>
+      <div
+        class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black"
+      >
+        <Image
+          class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50"
+          alt="pic1"
+          src={pic1}
+        />
+      </div>
     </div>
-        <div>
-         <div>
-         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
-            <h1 class=" z-[2] text-[30px] font-bold">Award-Winning Service</h1>
-            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
-         </div>
-         </div>
-         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
-            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic2" src={pic2} />
-         </div>
+    <div>
+      <div>
+        <div
+          class="flex absolute justify-center h-[300px] w-[100%] min-[1100px]:w-[33%] z-[1] items-center flex-col"
+        >
+          <h1 class="z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+          <h1 class="mt-[10px] z-[2] text-[20px] font-medium">
+            How We Operate
+          </h1>
+        </div>
+      </div>
+      <div
+        class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black"
+      >
+        <Image
+          class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50"
+          alt="pic2"
+          src={pic2}
+        />
+      </div>
     </div>
-        <div>
-         <div>
-         <div class="flex absolute justify-center h-[300px] w-[33%] z-[1] items-center flex-col ">
-            <h1 class="z-[2] text-[30px] font-bold">Award-Winning Service</h1>
-            <h1 class="mt-[10px] z-[2] text-[20px] font-medium">How We Operate</h1>
-         </div>
-         </div>
-         <div class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black">
-            <Image class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50" alt="pic3" src={header} />
-         </div>
+    <div>
+      <div>
+        <div
+          class="flex absolute justify-center h-[300px] w-[100%] z-[1] items-center flex-col min-[1100px]:w-[33%]"
+        >
+          <h1 class="z-[2] text-[30px] font-bold">Award-Winning Service</h1>
+          <h1 class="mt-[10px] z-[2] text-[20px] font-medium">
+            How We Operate
+          </h1>
+        </div>
+      </div>
+      <div
+        class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black"
+      >
+        <Image
+          class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50"
+          alt="pic3"
+          src={header}
+        />
+      </div>
     </div>
+  </div>
+  <div class="flex flex-col text-black mt-[200px] justify-center items-center">
+    <div class="flex w-full justify-center">
+      <div class="flex flex-col justify-center items-center w-[70%] relative">
+        <h1 class="text-[40px] font-bold text-amber-500 text-center">Meet the Team</h1>
+        <h1 class="text-[17px] text-amber-500 font-semibold mb-5">
+          Where the Passion Begins
+        </h1>
+        <p class="font-medium text-center">
+          Lions Textile Industries is made up of talented individuals with the
+          creativity and passion to not only meet, but exceed our clients’
+          needs. Each member brings something unique to the table, but we share
+          a commitment to providing high-quality products.
+        </p>
+      </div>
     </div>
+
+    <div class="customer flex flex-col justify-center items-center mt-[200px]">
+      <Image alt="review" src={pic1} class="w-[300px] h-[300px] rounded-full border-[#EE9935] border-[3px] shadow-inner" />
+      <h1 class="text-[35px] text-amber-500 mt-[50px]">Scammer 1</h1>
+      <h1 class="mt-[10px]">Professtional at Scamming</h1>
+      <p class="my-[10px] text-center">
+        I Love Scamming nIggas like you All my niggas all scammer I love
+        scamming :p
+      </p>
+      <buttom
+        class="mt-[30px] transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935] hover:text-white p-[5px] hover:rounded-lg rounded-md px-[7px] border-[#EE9935] border-[3px] text-[#EE9935] font-semibold"
+      >
+        Learn How We Scam!
+      </buttom>
+    </div>
+     <div class="customer flex flex-col justify-center items-center mt-[50px] mb-14">
+      <Image alt="review" src={pic1} class="w-[300px] h-[300px] rounded-full border-[#EE9935] border-[3px] shadow-inner" />
+      <h1 class="text-[35px] text-amber-500 mt-[50px]">Scammer 1</h1>
+      <h1 class="mt-[10px]">Professtional at Scamming</h1>
+      <p class="my-[10px] text-center">
+        I Love Scamming nIggas like you All my niggas all scammer I love
+        scamming :p
+      </p>
+      <buttom
+        class="mt-[30px] transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935] hover:text-white p-[5px] hover:rounded-lg rounded-md px-[7px] border-[#EE9935] border-[3px] text-[#EE9935] font-semibold"
+      >
+        Learn How We Scam!
+      </buttom>
+    </div>
+       <div class="customer flex flex-col justify-center items-center mt-[50px] mb-14">
+      <Image alt="review" src={pic1} class="w-[300px] h-[300px] rounded-full border-[#EE9935] border-[3px] shadow-inner" />
+      <h1 class="text-[35px] text-amber-500 mt-[50px]">Scammer 1</h1>
+      <h1 class="mt-[10px]">Professtional at Scamming</h1>
+      <p class="my-[10px] text-center">
+        I Love Scamming nIggas like you All my niggas all scammer I love
+        scamming :p
+      </p>
+      <buttom
+        class="mt-[30px] transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935] hover:text-white p-[5px] hover:rounded-lg rounded-md px-[7px] border-[#EE9935] border-[3px] text-[#EE9935] font-semibold"
+      >
+        Learn How We Scam!
+      </buttom>
+    </div>
+       <div class="customer flex flex-col justify-center items-center mt-[50px] mb-14">
+      <Image alt="review" src={pic1} class="w-[300px] h-[300px] rounded-full border-[#EE9935] border-[3px] shadow-inner" />
+      <h1 class="text-[35px] text-amber-500 mt-[50px]">Scammer 1</h1>
+      <h1 class="mt-[10px]">Professtional at Scamming</h1>
+      <p class="my-[10px] text-center">
+        I Love Scamming nIggas like you All my niggas all scammer I love
+        scamming :p
+      </p>
+      <buttom
+        class="mt-[30px] transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935] hover:text-white p-[5px] hover:rounded-lg rounded-md px-[7px] border-[#EE9935] border-[3px] text-[#EE9935] font-semibold"
+      >
+        Learn How We Scam!
+      </buttom>
+    </div>
+       <div class="customer flex flex-col justify-center items-center mt-[50px] mb-14">
+      <Image alt="review" src={pic1} class="w-[300px] h-[300px] rounded-full border-[#EE9935] border-[3px] shadow-inner" />
+      <h1 class="text-[35px] text-amber-500 mt-[50px]">Scammer 1</h1>
+      <h1 class="mt-[10px]">Professtional at Scamming</h1>
+      <p class="my-[10px] text-center">
+        I Love Scamming nIggas like you All my niggas all scammer I love
+        scamming :p
+      </p>
+      <buttom
+        class="mt-[30px] transition-[color, transform] ease-in-out duration-200 max-[1100px]:hidden hover:bg-[#EE9935] hover:text-white p-[5px] hover:rounded-lg rounded-md px-[7px] border-[#EE9935] border-[3px] text-[#EE9935] font-semibold"
+      >
+        Learn How We Scam!
+      </buttom>
+    </div>
+  </div>
 </Layout>

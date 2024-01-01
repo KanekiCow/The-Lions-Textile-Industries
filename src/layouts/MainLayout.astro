@@ -1,7 +1,7 @@
 ---
 import Nav from "../components/NavBar.svelte";
 const { title } = Astro.props;
- import { Image }  from 'astro:assets';
+ import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en" class="bg-white text-white">
@@ -26,5 +26,7 @@ const { title } = Astro.props;
       <Nav client:load />
     </nav>   
     <slot />
+     <Footer/>
   </body>
+ 
 </html>
