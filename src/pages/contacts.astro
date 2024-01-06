@@ -1,7 +1,37 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
+import career from "../img/career.jpg";
+import { Image } from "astro:assets";
+
 ---
 
-<Layout title="Contacts | Lions Textile Industries" >
-    contacts under development
+<Layout title="Contacts | Lions Textile Industries">
+  <div>
+    <div
+      class="flex absolute justify-center h-[300px] w-[100%] z-[1] items-center"
+    >
+      <h1 class="mt-[67px] text-white z-[2] text-[40px] font-bold">
+        Contact Us
+      </h1>
+      <h1 class="mt-[67px] z-[2] text-[40px] font-black text-orange-400">.</h1>
+    </div>
+
+    <div
+      class="relative text-center overflow-hidden text-white h-[300px] shadow-inner bg-black"
+    >
+      <Image
+        class="h-[300px] w-[100%] shadow-inner blur-sm opacity-50"
+        alt="career"
+        src={career}
+      />
+    </div>
+  </div>
+  <div class="flex justify-center ">
+    <a
+      class="text-white text-center hover:decoration-solid decoration-pink-500 decoration-1 font-semibold w-full bg-[#009fff]"
+      href="https://www.google.com/maps/dir/?api=1&destination=Plot%2013,%20Sutlej%20Block%20Satluj%20Block%20Allama%20Iqbal%20Town,%20Lahore,%20Punjab%2054000,%20Pakistan"
+      >Address: Suite No.1, Basement, 13-Satluj Block, Moon market, Allama Iqbal Town,
+      Lahore Pakistan 🎯
+    </a>
+  </div>
 </Layout>
