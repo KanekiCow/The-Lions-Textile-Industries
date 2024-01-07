@@ -2,7 +2,6 @@
 import Layout from "../layouts/MainLayout.astro";
 import career from "../img/career.jpg";
 import { Image } from "astro:assets";
-
 ---
 
 <Layout title="Contacts | Lions Textile Industries">
@@ -26,12 +25,31 @@ import { Image } from "astro:assets";
       />
     </div>
   </div>
-  <div class="flex justify-center ">
+  <div class="flex justify-center">
     <a
       class="text-white text-center hover:decoration-solid decoration-pink-500 decoration-1 font-semibold w-full bg-[#009fff]"
       href="https://www.google.com/maps/dir/?api=1&destination=Plot%2013,%20Sutlej%20Block%20Satluj%20Block%20Allama%20Iqbal%20Town,%20Lahore,%20Punjab%2054000,%20Pakistan"
-      >Address: Suite No.1, Basement, 13-Satluj Block, Moon market, Allama Iqbal Town,
-      Lahore Pakistan 🎯
+      >Address: Suite No.1, Basement, 13-Satluj Block, Moon market, Allama Iqbal
+      Town, Lahore Pakistan 🎯
     </a>
+  </div>
+  <div
+    class="flex justify-center text-black flex-col items-center w-full text-center"
+  >
+    <h1 class="text-[35px] font-bold">Have A Question? Let's Connect 👋</h1>
+    <h1 class="text-[20px]">Contact Customer Service</h1>
+    <a
+      href="mailto:lionstextile@gmail.com"
+      class="text-orange-400 font-semibold"
+      ><i class="fa-solid fa-envelope"></i> lionstextile@gmail.com</a
+    >
+    <a href="tel:+92-423-780 1088" class="text-orange-400 font-semibold"
+      ><i class="fa-solid fa-phone"></i> +92-423-780 1088</a
+    >
+    <a
+      href="tel:+92-423-780 1099"
+      class="text-orange-400 font-semibold mb-[350px]"
+      ><i class="fa-solid fa-phone"></i> +92-423-780 1099</a
+    >
   </div>
 </Layout>
